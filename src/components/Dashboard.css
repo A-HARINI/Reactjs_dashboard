@@ -1,0 +1,119 @@
+.dashboard-wrapper {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.dashboard {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 25px 30px;
+  margin-left: 60px;
+  flex: 1;
+}
+
+.dashboard-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #333;
+  margin-top: 0;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 18px;
+  grid-auto-rows: minmax(280px, auto);
+  align-items: start;
+}
+
+/* Top Row - 3 columns: LMS, Combined Courses, Grade */
+.dashboard-card.lms-section {
+  grid-column: span 5;
+}
+
+.dashboard-card.courses-combined {
+  grid-column: span 4;
+}
+
+.dashboard-card.grade-section {
+  grid-column: span 3;
+}
+
+/* Middle Row - 3 equal charts: E-Learn Types, Category %, Attempts */
+.dashboard-card.elearn-chart {
+  grid-column: span 4;
+}
+
+.dashboard-card.category-chart {
+  grid-column: span 4;
+}
+
+.dashboard-card.attempts-chart {
+  grid-column: span 4;
+}
+
+/* Bottom Row - 2 wide cards: New Joinings, Course Completion */
+.dashboard-card.joinings-chart {
+  grid-column: span 6;
+}
+
+.dashboard-card.completion-chart {
+  grid-column: span 6;
+}
+
+.dashboard-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-card.lms-section {
+  min-height: 280px;
+  min-width: 500px;
+  width: 100%;
+}
+
+.chart-card {
+  min-height: 320px;
+}
+
+.chart-card.wide {
+  min-height: 320px;
+}
+
+@media (max-width: 1200px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .chart-card.wide {
+    grid-column: span 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .chart-card.wide {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .chart-card.wide {
+    grid-column: span 1;
+  }
+}
+
