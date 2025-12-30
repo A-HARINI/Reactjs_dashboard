@@ -1,15 +1,89 @@
 .elearn-chart {
   width: 100%;
-  height: 100%;
+  background: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 16px 24px;
+  box-sizing: border-box;
+  border: none;
+}
+
+.elearn-content-grid {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 16px;
+  width: 100%;
+  align-items: start;
+}
+
+.elearn-left-column {
   display: flex;
   flex-direction: column;
 }
 
-.chart-title {
+.elearn-chart .chart-title {
   font-size: 14px;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 15px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: left;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.2;
+}
+
+.course-titles-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.course-titles-list li {
+  font-size: 11px;
+  font-weight: 400;
+  color: #6B7280;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.elearn-right-column {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.elearn-right-column > div {
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.view-only-button {
+  margin-top: 16px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid #E5E7EB;
+  background-color: #FFFFFF;
+  color: #6B7280;
+  cursor: pointer;
+  align-self: left;
+  font-family: 'Inter', sans-serif;
+}
+
+.view-only-button:hover {
+  background-color: #F9FAFB;
 }
 
 

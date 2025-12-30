@@ -4,15 +4,17 @@ import './ActiveCourses.css'
 function ActiveCourses() {
   return (
     <div className="active-courses">
-      <h3 className="section-title">Active Courses</h3>
+      <span className="section-title">ACTIVE COURSES</span>
       <div className="courses-stats">
-        <div className="stat-item yes">
+        {/* Yes Group */}
+        <div className="stat-group">
           <span className="stat-number">28</span>
-          <span className="stat-label">Yes</span>
+          <span className="stat-badge yes-badge">Yes</span>
         </div>
-        <div className="stat-item no">
+        {/* No Group */}
+        <div className="stat-group">
           <span className="stat-number">2</span>
-          <span className="stat-label">No</span>
+          <span className="stat-badge no-badge">No</span>
         </div>
       </div>
     </div>

@@ -1,0 +1,97 @@
+.mandatory-courses-only {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-start;
+}
+
+.mandatory-courses-only .section-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #6B7280;
+  margin: 0;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+
+.mandatory-courses-only .courses-stats {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  margin-top: 5px;
+  align-items: flex-start;
+}
+
+.mandatory-courses-only .stat-item {
+  display: flex;
+  align-items: center;
+}
+
+.mandatory-courses-only .stat-box.combined-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 16px 0;
+  flex: 1;
+  gap: 0;
+}
+
+.mandatory-courses-only .stat-label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  color: inherit;
+  margin-bottom: 4px;
+}
+
+.mandatory-courses-only .stat-number {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+  color: inherit;
+}
+
+.mandatory-courses-only .stat-item.yes .combined-box {
+  background-color: #E9F7EF;
+  color: #16A34A;
+}
+
+.mandatory-courses-only .stat-item.yes .stat-number,
+.mandatory-courses-only .stat-item.yes .stat-label {
+  color: #16A34A;
+}
+
+.mandatory-courses-only .stat-item.no .combined-box {
+  background-color: #FEF2F2;
+  color: #EF4444;
+}
+
+.mandatory-courses-only .stat-item.no .stat-number,
+.mandatory-courses-only .stat-item.no .stat-label {
+  color: #EF4444;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

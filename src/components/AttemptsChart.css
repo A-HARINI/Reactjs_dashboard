@@ -5,4 +5,30 @@
   flex-direction: column;
 }
 
+.attempts-chart .chart-title {
+  font-size: 16px;
+  font-weight: 900;
+  color: #1e293b;
+  margin: 0 0 32px 0;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: left;
+  flex-shrink: 0;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.2;
+}
+
+.attempts-chart > div:last-child {
+  flex: 1;
+}
+
+.attempts-chart-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+
 

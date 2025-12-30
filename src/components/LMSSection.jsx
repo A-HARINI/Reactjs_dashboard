@@ -8,10 +8,10 @@ function LMSSection() {
       <div className="lms-number">30</div>
       <div className="lms-progress-container">
         <div className="lms-progress-bar">
-          <div className="progress-segment not-started" style={{ width: '70%' }}></div>
-          <div className="progress-segment declined" style={{ width: '3%' }}></div>
-          <div className="progress-segment in-progress" style={{ width: '15%' }}></div>
-          <div className="progress-segment completed" style={{ width: '15%' }}></div>
+          <div className="progress-segment not-started" style={{ flex: '0 0 70%' }}></div>
+          <div className="progress-segment declined" style={{ flex: '0 0 3%' }}></div>
+          <div className="progress-segment in-progress" style={{ flex: '0 0 15%' }}></div>
+          <div className="progress-segment completed" style={{ flex: '0 0 15%' }}></div>
         </div>
         <div className="lms-legend">
           <div className="legend-item">

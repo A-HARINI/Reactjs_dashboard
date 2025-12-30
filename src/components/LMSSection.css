@@ -1,82 +1,107 @@
 .lms-section {
   display: flex;
   flex-direction: column;
-  height: 100%;
   justify-content: flex-start;
-  min-height: 280px;
+  width: 100%;
+  height: 100%;
+  background: #FFFFFF;
+  border: 1px solid #F3F4F6;
+  border-radius: 12px;
+  padding: 24px 24px 12px 24px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 .lms-title {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-size: 16px;
-  font-weight: 600;
-  color: #333;
-  margin: 0 0 12px 0;
+  font-weight: 900;
+  color: #1e293b;
+  margin: 0 0 48px 0;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: left;
+  line-height: 1.2;
 }
 
 .lms-number {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-size: 48px;
   font-weight: 700;
-  color: #333;
+  color: #111827;
   line-height: 1;
-  margin: 0 0 20px 0;
+  margin: 0 0 56px 0;
+  padding: 0;
+  letter-spacing: -0.02em;
 }
 
 .lms-progress-container {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 0;
 }
 
 .lms-progress-bar {
   display: flex;
   width: 100%;
-  height: 40px;
-  border-radius: 4px;
+  height: 6px;
+  border-radius: 999px;
   overflow: hidden;
   position: relative;
-  margin-bottom: 12px;
+  margin-bottom: 32px;
+  background-color: transparent;
 }
 
 .progress-segment {
   height: 100%;
   flex-shrink: 0;
+  transition: none;
 }
 
 .progress-segment:first-child {
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
 }
 
 .progress-segment:last-child {
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 
 .progress-segment.not-started {
-  background-color: #FFD700;
+  background-color: #F4C430;
 }
 
 .progress-segment.declined {
-  background-color: #FF4444;
+  background-color: #F36A6A;
 }
 
 .progress-segment.in-progress {
-  background-color: #87CEEB;
+  background-color: #93C5FD;
 }
 
 .progress-segment.completed {
-  background-color: #4A90E2;
+  background-color: #4000ff;
 }
 
 .lms-legend {
   display: flex;
-  flex-wrap: wrap;
-  gap: 12px 16px;
+  flex-wrap: nowrap;
+  gap: 14px;
   width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .legend-item {
   display: flex;
   align-items: center;
   gap: 6px;
+  flex-shrink: 0;
 }
 
 .legend-dot {
@@ -84,28 +109,33 @@
   height: 10px;
   border-radius: 50%;
   flex-shrink: 0;
+  display: inline-block;
 }
 
 .legend-dot.not-started-dot {
-  background-color: #FFD700;
+  background-color: #F4C430;
 }
 
 .legend-dot.declined-dot {
-  background-color: #FF4444;
+  background-color: #F36A6A;
 }
 
 .legend-dot.in-progress-dot {
-  background-color: #87CEEB;
+  background-color: #93C5FD;
 }
 
 .legend-dot.completed-dot {
-  background-color: #4A90E2;
+  background-color: #4000ff;
 }
 
 .legend-label {
-  font-size: 12px;
-  font-weight: 500;
-  color: #333;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  color: #6B7280;
   white-space: nowrap;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
 }
 

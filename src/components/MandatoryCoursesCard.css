@@ -1,0 +1,86 @@
+.mandatory-courses-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.mandatory-courses-card .section-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #6B7280;
+  margin: 0 0 12px 0;
+  text-transform: none;
+  text-align: left;
+}
+
+.mandatory-courses-card .courses-stats {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  flex: 1;
+}
+
+.mandatory-courses-card .stat-item {
+  flex: 1;
+}
+
+.mandatory-courses-card .stat-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 16px 0;
+  gap: 4px;
+}
+
+.mandatory-courses-card .stat-label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  color: inherit;
+}
+
+.mandatory-courses-card .stat-number {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+  color: inherit;
+}
+
+.mandatory-courses-card .stat-item.yes .stat-box {
+  background-color: #E9F7EF;
+  color: #16A34A;
+}
+
+.mandatory-courses-card .stat-item.yes .stat-label,
+.mandatory-courses-card .stat-item.yes .stat-number {
+  color: #16A34A;
+}
+
+.mandatory-courses-card .stat-item.no .stat-box {
+  background-color: #FEF2F2;
+  color: #EF4444;
+}
+
+.mandatory-courses-card .stat-item.no .stat-label,
+.mandatory-courses-card .stat-item.no .stat-number {
+  color: #EF4444;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -4,15 +4,17 @@ import './MandatoryCourses.css'
 function MandatoryCourses() {
   return (
     <div className="mandatory-courses">
-      <h3 className="section-title">Mandatory Courses</h3>
+      <span className="section-title">MANDATORY COURSES</span>
       <div className="courses-stats">
-        <div className="stat-item yes">
+        {/* Yes Group */}
+        <div className="stat-group">
           <span className="stat-number">22</span>
-          <span className="stat-label">Yes</span>
+          <span className="stat-badge yes-badge">Yes</span>
         </div>
-        <div className="stat-item no">
+        {/* No Group */}
+        <div className="stat-group">
           <span className="stat-number">8</span>
-          <span className="stat-label">No</span>
+          <span className="stat-badge no-badge">No</span>
         </div>
       </div>
     </div>
